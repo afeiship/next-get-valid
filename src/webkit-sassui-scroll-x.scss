@@ -8,6 +8,7 @@ $webkit-sassui-scroll-x-options: (
     white-space: nowrap;
     overflow: hidden;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     .item {
       display: inline-block;
       vertical-align: middle;

@@ -4,7 +4,8 @@
   .webkit-sassui-scroll-x > .scroller {
     white-space: nowrap;
     overflow: hidden;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; }
     .webkit-sassui-scroll-x > .scroller .item {
       display: inline-block;
       vertical-align: middle; }
