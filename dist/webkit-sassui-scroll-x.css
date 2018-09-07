@@ -1,0 +1,12 @@
+/*webkit-sassui-scroll-x Start*/
+.webkit-sassui-scroll-x {
+  width: 100%; }
+  .webkit-sassui-scroll-x > .scroller {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll; }
+    .webkit-sassui-scroll-x > .scroller .item {
+      display: inline-block;
+      vertical-align: middle; }
+
+/*webkit-sassui-scroll-x End*/

@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-scroll-x",
+  "description": "Scroll x component sass ui",
+  "main": [
+    "dist/webkit-sassui-scroll-x.css",
+    "dist/webkit-sassui-scroll-x.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "scroll-x"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-sassui-scroll-x",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

@@ -1,0 +1,45 @@
+/*webkit-sassui-scroll-x Start*/
+.webkit-sassui-scroll-x {
+  width: 100%;
+}
+
+.webkit-sassui-scroll-x > .scroller {
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.webkit-sassui-scroll-x > .scroller .item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*webkit-sassui-scroll-x End*/
+.test-webkit-sassui-scroll-x {
+  border: 1px solid red;
+  position: relative;
+}
+
+.test-webkit-sassui-scroll-x .scroller {
+  border: 1px solid #000;
+}
+
+.test-webkit-sassui-scroll-x .scroller .item {
+  border: 1px solid #00f;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.test-webkit-sassui-scroll-x .scroller .item img {
+  vertical-align: middle;
+}
+
+.test-webkit-sassui-scroll-x .extra {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  background: #333;
+}

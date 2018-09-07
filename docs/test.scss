@@ -1,0 +1,27 @@
+@import "../dist/webkit-sassui-scroll-x.scss";
+
+.test-webkit-sassui-scroll-x {
+  border: 1px solid red;
+  position: relative;
+  .scroller {
+    border: 1px solid #000;
+    .item {
+      border: 1px solid #00f;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 10px;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .extra{
+    position: absolute;
+    right: 0;
+    top:0;
+    height:100%;
+    width: 60px;
+    background: #333;
+  }
+}
