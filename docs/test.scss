@@ -3,6 +3,8 @@
 .test-webkit-sassui-scroll-x {
   border: 1px solid red;
   position: relative;
+  height: 85px;
+  box-sizing: border-box;
   .scroller {
     border: 1px solid #000;
     .item {

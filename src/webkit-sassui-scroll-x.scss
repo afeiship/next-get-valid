@@ -1,14 +1,31 @@
 /*webkit-sassui-scroll-x Start*/
-$webkit-sassui-scroll-x-options: (
-) !default;
+$webkit-sassui-scroll-x-options: () !default;
 
 .webkit-sassui-scroll-x {
   width: 100%;
+
+  &.scrollbar-false,
+  &[data-scrollbar="false"] {
+    overflow: hidden;
+    > .scroller {
+      padding-bottom: 10px;
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+        -webkit-border-radius: 6px;
+      }
+    }
+  }
+
   > .scroller {
     white-space: nowrap;
     overflow: hidden;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+
     .item {
       display: inline-block;
       vertical-align: middle;
