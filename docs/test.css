@@ -47,6 +47,8 @@ h3 {
 }
 
 .test-webkit-sassui-scroll-x .scroller {
+  position: relative;
+  z-index: 1;
   border: 1px solid #000;
 }
 
