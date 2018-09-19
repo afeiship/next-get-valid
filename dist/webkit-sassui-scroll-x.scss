@@ -1,14 +1,21 @@
 /*webkit-sassui-scroll-x Start*/
-$webkit-sassui-scroll-x-options: () !default;
+$webkit-sassui-scroll-x-options: (
+  scrollbar-padding: 10px
+) !default;
 
 .webkit-sassui-scroll-x {
+  $scrollbar-padding: map-get(
+    $map: $webkit-sassui-scroll-x-options,
+    $key: scrollbar-padding
+  );
+
   width: 100%;
 
   &.scrollbar-false,
   &[data-scrollbar="false"] {
     overflow: hidden;
     > .scroller {
-      padding-bottom: 10px;
+      padding-bottom: $scrollbar-padding;
       ::-webkit-scrollbar {
         display: none;
       }
