@@ -33,6 +33,12 @@
 }
 
 /*webkit-sassui-scroll-x End*/
+h3 {
+  margin-top: 40px;
+  padding-left: 14px;
+  border-left: 4px solid #ccc;
+}
+
 .test-webkit-sassui-scroll-x {
   border: 1px solid red;
   position: relative;
@@ -53,6 +59,8 @@
 
 .test-webkit-sassui-scroll-x .scroller .item img {
   vertical-align: middle;
+  width: 80px;
+  height: 80px;
 }
 
 .test-webkit-sassui-scroll-x .extra {
