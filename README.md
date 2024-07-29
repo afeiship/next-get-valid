@@ -16,13 +16,13 @@ yarn add @jswork/next-get-valid
 import '@jswork/next-get-valid';
 
 const data = {
-  name: 'afei',
+  name: 'xiaoming',
   age: 18,
   email: ''
 };
 
-const isValidEmail = (inValue) => {
-  return inValue.indexOf('@') > -1;
+const isValidEmail = (value) => {
+  return value.indexOf('@') > -1;
 };
 
 const res = nx.getValid(data, 'email', 'example@email', isValidEmail);

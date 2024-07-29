@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-get-valid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get valid data by condtion.",
   "homepage": "https://js.work",
   "files": [
@@ -53,5 +53,14 @@
     "src/**/*.{js,jsx}": [
       "npm run pretty"
     ]
-  }
+  },
+  "keywords": [
+    "empty",
+    "get",
+    "is-empty",
+    "is-valid",
+    "next",
+    "nil",
+    "nx"
+  ]
 }
