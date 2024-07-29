@@ -7,11 +7,8 @@ nx.GET_VALID_HOOKS = {
 };
 
 nx.getValid = function (inTarget, inPath, inDefaults, inIsValid) {
-  const hasValidFn = typeof inIsValid !== 'undefined';
-  const defaults = hasValidFn ? undefined : inDefaults;
-  const res = nx.get(inTarget, inPath, defaults);
-  if (!hasValidFn) return res;
-  const isValid = nx.GET_VALID_HOOKS[inIsValid] || inIsValid;
+  const res = nx.get(inTarget, inPath);
+  const isValid = nx.GET_VALID_HOOKS[inIsValid || 'valid'] || inIsValid;
   if(typeof isValid !== 'function') throw new Error(ERR_MSG);
   return isValid(res) ? res: inDefaults;
 };

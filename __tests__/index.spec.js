@@ -2,11 +2,13 @@ require('../src');
 
 describe('nx.getValid', () => {
   test('normal get without isValid Function', function () {
-    const obj = { name: 'fei' };
+    const obj = { name: 'fei', age: null };
     const res1 = nx.getValid(obj, 'a.b.c');
     const res2 = nx.getValid(obj, 'a.b.c', 'defaults')
+    const res3 = nx.getValid(obj, 'age', 0);
     expect(res1).toBe(undefined);
     expect(res2).toBe('defaults');
+    expect(res3).toBe(0);
   });
 
   test('get valid use default valid hooks', () => {
